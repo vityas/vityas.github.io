@@ -1,0 +1,133 @@
+---
+title: RM
+layout: default
+---
+<script src="{{ site.baseurl }}/js/main.js"></script>
+<section class="hero diagonal", style ="padding-top: 200px">
+	<div class="container">
+		<h2 class="editable">Review Matters</h2>
+		<p class="subtext editable">This is a project directed to e-commerse <strong>obsession</strong> with ratings</p>
+		<p><a class="button alt" href="{{ site.baseurl }}/about/">About me</a></p>
+			<div class="learn-more"><a href="#data">See results <span class="arrow">&#x25BC;</span></a></div>
+			<a href="#data">Skills</a>
+	</div>
+</section>
+
+
+<section class="diagonal patterned">
+	<div class="container halves">
+		<div>
+			<h2 class="editable"> The Big Question</h2>
+
+			<h4> Does review matter? </h4>
+			<p>
+				Let's imagine you are selling items on Amazon, and just got a very negative review.
+				This is unfortunate, but how much does it really hurt your <b>bottom line</b>?
+				And more importantly, what aspects of review make it matter. Or it is just the rating itself.
+			</p>
+			<p>
+				Lets dive into this question in a little more detail
+			</p>
+		</div>
+	</div>
+</section>
+
+
+<section class="diagonal patterned-a">
+	<div class="container halves">
+		<!-- <h3 class="editable", style="background-color: #000"> Lets forcus on Amazon</h3> -->
+	</div>
+</section>
+
+
+<section class="diagonal alternate", id = "data">
+	<div class="container halves">
+		<div>
+			<h3 class="editable"> How it begins</h3>
+			<p class="editable">
+				First we need data. The more the merrier. Lets focus on Amazon for now.
+				We need to get reviews and corresponding prices.
+			</p>
+			<h4> Reviews</h4>
+			<p class="editable">
+				<img style="float: right; margin: 0px 15px 15px 0px;" src="{{ site.baseurl }}/images/amazon2.jpg"  width="500" >
+				Instead of scarpping amazon website there is good amount of data available
+				<a href = "http://jmcauley.ucsd.edu/data/amazon/", >here</a>
+				for research purposes. It is rovided by Julian McAuley at UCSD.
+					 <!-- <a class="button" href="http://jmcauley.ucsd.edu/data/amazon/">UCSD</a> -->
+			</p><p>
+				It consists of millions of reviews and their metadata for as long as 18 years ending in mid 2014;
+				Data is separated into 24 categories (e.g. Books. Electronics, Beauty, Sport).
+
+			</p>
+			<h4> Prices</h4>
+			<p> Getting historical prices is a whole different story.
+				There are just a few web services that offer a peak into historical Amazon prices,
+				<img style="float: left; margin: 0px 15px 15px 0px;" src="{{ site.baseurl }}/images/3camels.jpg"  width="500" />
+				but ther is no free API. One way that seems to work and does not go against
+				"robots.txt" policy of the website is to take screenshots of camelcamelcamel.
+
+			</p>
+
+{% highlight ruby %}
+	# robots.txt:
+	User-Agent: *
+
+	Allow: *
+{% endhighlight %}
+
+			<p>
+			the screenshots are then analyzed to produce a digital pricetag as a function of time.
+			The details can be found in the blog post:
+			<br>
+			<a class = "button" href="{% post_url 2018-02-01-image-analysis %}">blog post</a>
+			</p>
+			<!-- <p class="editable"><a href="{{ site.baseurl }}/portfolio/">
+				View full &rarr;</a> -->
+		</div>
+		<!-- [mylink]({% post_url 2018-02-20-correlations %} ) -->
+			<!-- <ul class="image-grid">
+					<li><img src="/images/amazon2.png"></li>
+			</ul>		 -->
+				<!-- <div>
+					<p>
+						<img style="float: right; margin: 10px 15px 15px 10px;"
+							src="{{ site.baseurl }}/images/amazon2.jpg" width="550" style="allign: right;margin-bottom: 40px;">
+					</p>
+
+					<p><img style="float: left; margin: 0px 15px 15px 0px;" src="{{ site.baseurl }}/images/amazon2.jpg"  width="100" />
+						Nunc pulvinar lacus id purus ultrices id sagittis neque convallis. Nunc vel libero orci.
+						<br style="clear: both;" />
+					</p>
+				</div>
+			</div>
+				<div>
+					<p>
+						<img style="float: left; margin: 10px 15px 15px 10px;"
+							src="{{ site.baseurl }}/images/3camels.jpg" width="550" style="allign: right;margin-bottom: 40px;">
+					</p>
+				</div> -->
+			</div>
+
+
+</section>
+
+
+<section class="hero diagonal", style="margin-top: -50px; padding-top: 100px">
+	<div class="container halves">
+		<div>
+			<h3 class="editable">Lets first look at a single category, "Baby"</h3>
+			<p class="editable">
+				<img src="{{ site.baseurl }}/images/cor2.png" alt="">
+				<br>
+				Here the color simply represents the density of points
+				<br>
+				and the interactive plot
+
+				{% include color_scatter.html %}
+
+
+			</p>
+		</div>
+	</div>
+</section>
