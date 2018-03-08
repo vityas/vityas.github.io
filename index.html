@@ -2,7 +2,14 @@
 title: RM
 layout: default
 ---
+
 <script src="{{ site.baseurl }}/js/main.js"></script>
+
+
+
+
+
+
 <section class="hero diagonal", style ="padding-top: 200px">
 	<div class="container">
 		<h2 class="editable">Review Matters</h2>
@@ -29,13 +36,6 @@ layout: default
 				Lets dive into this question in a little more detail
 			</p>
 		</div>
-	</div>
-</section>
-
-
-<section class="diagonal patterned-a">
-	<div class="container halves">
-		<!-- <h3 class="editable", style="background-color: #000"> Lets forcus on Amazon</h3> -->
 	</div>
 </section>
 
@@ -86,46 +86,65 @@ layout: default
 				View full &rarr;</a> -->
 		</div>
 		<!-- [mylink]({% post_url 2018-02-20-correlations %} ) -->
-			<!-- <ul class="image-grid">
-					<li><img src="/images/amazon2.png"></li>
-			</ul>		 -->
-				<!-- <div>
-					<p>
-						<img style="float: right; margin: 10px 15px 15px 10px;"
-							src="{{ site.baseurl }}/images/amazon2.jpg" width="550" style="allign: right;margin-bottom: 40px;">
-					</p>
 
-					<p><img style="float: left; margin: 0px 15px 15px 0px;" src="{{ site.baseurl }}/images/amazon2.jpg"  width="100" />
-						Nunc pulvinar lacus id purus ultrices id sagittis neque convallis. Nunc vel libero orci.
-						<br style="clear: both;" />
-					</p>
-				</div>
-			</div>
-				<div>
-					<p>
-						<img style="float: left; margin: 10px 15px 15px 10px;"
-							src="{{ site.baseurl }}/images/3camels.jpg" width="550" style="allign: right;margin-bottom: 40px;">
-					</p>
-				</div> -->
 			</div>
 
 
 </section>
 
+<section class="diagonal patterned-a">
+	<div class="container halves">
+		<br><br>
+		<!-- <h3 class="editable", style="background-color: #000"> Lets forcus on Amazon</h3> -->
+	</div>
+</section>
 
-<section class="hero diagonal", style="margin-top: -50px; padding-top: 100px">
+
+<section class="patterned diagonal", style="margin-top: -50px; padding-top: 100px">
 	<div class="container halves">
 		<div>
 			<h3 class="editable">Lets first look at a single category, "Baby"</h3>
 			<p class="editable">
-				<img src="{{ site.baseurl }}/images/cor2.png" alt="">
+				positive word cloud and
+				negative word cloud
 				<br>
-				Here the color simply represents the density of points
+				<img src="{{ site.baseurl }}/images/wc_baby_pos.png" alt="" width = "350">
+				<img src="{{ site.baseurl }}/images/wc_baby_neg.png" alt="" width = "350">
 				<br>
-				and the interactive plot
+				<br>
 
-				{% include color_scatter.html %}
+			</p>
+		</div>
+	</div>
+</section>
 
+
+<section class="alternate diagonal", style="margin-top: -50px; padding-top: 100px">
+	<div class="container halves">
+		<div>
+			<p>
+				<b>
+					So how is review rating correlate with prices?</b>
+				<br>
+				Here is an interactive plot
+				<br>
+
+				<!--
+				<div class = "zoom">
+					<ul class="image-grid">
+
+							<li><a href=" {% post_url 2018-02-20-correlations %}">
+								<img src="{{ site.baseurl }}/images/screenshot_cor.jpg" width = "400"></a></li>
+
+					</ul>
+				</div>
+				</a> -->
+
+
+
+				<!-- <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.10.1.min.css" type="text/css" />
+				<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.1.min.js"></script> -->
+				{% include	color_scatter.html %}
 
 			</p>
 		</div>
