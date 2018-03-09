@@ -19,4 +19,4 @@ show_comments: true
 <img src="{{ site.baseurl }}/images/wc_elec_pos.png" alt="" width = "250">
 <img src="{{ site.baseurl }}/images/wc_elec_neg.png" alt="" width = "250">
 
-{% include correlation_electronics.html %}
+{% include correlation_Electronics.html %}
