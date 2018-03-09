@@ -20,3 +20,7 @@ show_comments: true
 <img src="{{ site.baseurl }}/images/wc_elec_neg.png" alt="" width = "250">
 
 {% include correlation_Electronics.html %}
+
+###
+### Category: Sport and Outdoors
+{% include correlation_Sports_and_Outdoors.html %}
