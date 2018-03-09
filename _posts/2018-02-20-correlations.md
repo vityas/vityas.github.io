@@ -8,4 +8,15 @@ show_comments: true
 <!-- 2018-02-20-correlations -->
 ## correlations
 
-{% include color_scatter.html %}
+### Category: Baby
+<img src="{{ site.baseurl }}/images/wc_baby_pos.png" alt="" width = "250">
+<img src="{{ site.baseurl }}/images/wc_baby_neg.png" alt="" width = "250">
+
+{% include correlation_baby.html %}
+
+### Category: Electronics
+
+<img src="{{ site.baseurl }}/images/wc_elec_pos.png" alt="" width = "250">
+<img src="{{ site.baseurl }}/images/wc_elec_neg.png" alt="" width = "250">
+
+{% include correlation_electronics.html %}

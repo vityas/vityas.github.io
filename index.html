@@ -108,8 +108,12 @@ layout: default
 				positive word cloud and
 				negative word cloud
 				<br>
-				<img src="{{ site.baseurl }}/images/wc_baby_pos.png" alt="" width = "350">
-				<img src="{{ site.baseurl }}/images/wc_baby_neg.png" alt="" width = "350">
+				<div class="zoom">
+
+				<img src="{{ site.baseurl }}/images/wc_baby_pos.png" alt="" width = "250">
+				<img src="{{ site.baseurl }}/images/wc_baby_neg.png" alt="" width = "250">
+				</div>
+
 				<br>
 				<br>
 
@@ -128,23 +132,11 @@ layout: default
 				<br>
 				Here is an interactive plot
 				<br>
-
-				<!--
-				<div class = "zoom">
-					<ul class="image-grid">
-
-							<li><a href=" {% post_url 2018-02-20-correlations %}">
-								<img src="{{ site.baseurl }}/images/screenshot_cor.jpg" width = "400"></a></li>
-
-					</ul>
-				</div>
-				</a> -->
-
-
-
-				<!-- <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.10.1.min.css" type="text/css" />
-				<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.1.min.js"></script> -->
 				{% include	color_scatter.html %}
+				<br>
+				If you want to adjust parameters yourself
+				<p><a class="button alt" href="{% post_url 2018-02-20-correlations %} ">Adjust parameters yourself</a></p>
+
 
 			</p>
 		</div>
