@@ -3,7 +3,7 @@ title: RM
 layout: default
 ---
 
-<script src="{{ site.baseurl }}/js/main.js"></script>
+<!-- <script src="{{ site.baseurl }}/js/main.js"></script> -->
 
 
 
@@ -105,17 +105,29 @@ layout: default
 		<div>
 			<h3 class="editable">Lets first look at a single category, "Baby"</h3>
 			<p class="editable">
-				positive word cloud and
-				negative word cloud
-				<br>
-				<div class="zoom">
 
-				<img src="{{ site.baseurl }}/images/wc_baby_pos.png" alt="" width = "250">
-				<img src="{{ site.baseurl }}/images/wc_baby_neg.png" alt="" width = "250">
-				</div>
+				<table style="width:100%">
+					<th width="30%"> Amazon Word Clouds  </th>
+					<th><span style="color:green; font-size:26px">Positive</span> reviews<hr></th>
+					<th><span style="color:red; font-size:26px">  Negative</span> reviews<hr></th>
 
-				<br>
-				<br>
+				</table>
+
+				<table style="width:100%">
+				  <tr>
+				    <th><img src="{{ site.baseurl }}/images/az_logo.png" alt="" width = "250">
+						</th>
+				    <th>
+							<div class="zoom">
+							<img src="{{ site.baseurl }}/images/w5_cat0.png" alt="" width = "220">
+							<img src="{{ site.baseurl }}/images/w1_cat0.png" alt="" width = "220">
+							</div>
+						</th>
+				  </tr>
+
+				</table>
+
+				<p><a class="button alt" href="{% post_url 2018-03-01-clouds %} ">For more - click me</a></p>
 
 			</p>
 		</div>
