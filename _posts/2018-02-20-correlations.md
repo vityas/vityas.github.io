@@ -2,7 +2,7 @@
 title: Correlations
 categories:
   - correlations
-<!-- author_staff_member: Victor -->
+<!-- author_staff_member: Vitya -->
 show_comments: true
 ---
 <!-- 2018-02-20-correlations -->
